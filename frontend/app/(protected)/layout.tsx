@@ -19,7 +19,7 @@ export default async function DefaultLayout({
             <body className="h-screen w-full transition-colors duration-300">
                 <ThemeProvider
                     attribute="class"
-                    defaultTheme="system"
+                    defaultTheme="light"
                 >
                     <ModalProvider/>
                     <Toaster />
