@@ -7,7 +7,7 @@ import { UserService } from '../../services/auth/user/user.service';
 import { AppError } from '../../services/auth/user/AppError';
 import { TokenService } from '../../services/auth/token/token.service';
 import { ResponseFormatter } from '../../../utils/response-formatter';
-
+import { prisma } from "../../../utils/prisma"
 
 const passwordHasher = new PasswordHasher();
 const tokenService = new TokenService();

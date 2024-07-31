@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import { UserRepository } from '../../user/user.repository';
 import { FacebookOauthHelper } from './facebook.oauth.helper';
 import { JwtService } from '../../jwt/jwt.service';
+import { prisma } from "../../../../../utils/prisma"
 
 dotenv.config();
 

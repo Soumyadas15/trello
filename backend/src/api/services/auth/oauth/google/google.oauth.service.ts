@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 import { UserRepository } from '../../user/user.repository';
 import { GoogleAuthHelper } from './google.oauth.helper';
 import { JwtService } from '../../jwt/jwt.service';
+import { prisma } from "../../../../../utils/prisma"
 
 dotenv.config();
 

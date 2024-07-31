@@ -4,6 +4,7 @@ import { ILoginResponse } from "../../user/ILoginResponse";
 import { destructureFacebookUser } from "../../../../../utils/destructure";
 import { AppError } from "../../user/AppError";
 
+import { prisma } from "../../../../../utils/prisma"
 
 export class FacebookOauthHelper {
     private userRepository: UserRepository;

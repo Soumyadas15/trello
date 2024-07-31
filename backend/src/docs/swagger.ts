@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const PORT = process.env.PORT;
+const BACKEND_URL = process.env.BACKEND_URL;
 
 const swaggerOptions = {
     swaggerDefinition: {
@@ -16,7 +17,7 @@ const swaggerOptions = {
         },
         servers: [
             {
-                url: `https://trello-uf51.onrender.com/api`,
+                url: `http://localhost:8080/api`,
             },
         ],
     },

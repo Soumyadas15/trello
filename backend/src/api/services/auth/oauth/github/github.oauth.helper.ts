@@ -3,7 +3,7 @@ import { UserRepository } from "../../user/user.repository";
 import { ILoginResponse } from "../../user/ILoginResponse";
 import { destructureGitHubUser } from "../../../../../utils/destructure";
 import { AppError } from "../../user/AppError";
-
+import { prisma } from "../../../../../utils/prisma"
 
 export class GitHubAuthHelper {
     private userRepository: UserRepository;

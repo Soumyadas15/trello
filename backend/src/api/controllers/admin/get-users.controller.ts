@@ -8,6 +8,7 @@ import { UserRepository } from '../../services/auth/user/user.repository';
 import { PasswordHasher } from '../../../utils/password';
 import { ResponseFormatter } from '../../../utils/response-formatter';
 import { JwtService } from '../../services/auth/jwt/jwt.service';
+import { prisma } from "../../../utils/prisma"
 
 const jwtService = new JwtService();
 const passwordHasher = new PasswordHasher();

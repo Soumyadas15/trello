@@ -8,7 +8,7 @@ import { PasswordHasher } from '../../../utils/password';
 import { AuthError } from '../../services/auth/user/AuthError';
 import { ResponseFormatter } from '../../../utils/response-formatter';
 import { EmailService } from '../../services/auth/email/mail.service';
-
+import { prisma } from "../../../utils/prisma"
 
 const passwordHasher = new PasswordHasher();
 const tokenService = new TokenService();

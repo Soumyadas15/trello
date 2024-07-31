@@ -6,7 +6,7 @@ import { UserRepository } from '../../services/auth/user/user.repository';
 import { TokenService } from '../../services/auth/token/token.service';
 import { PasswordHasher } from '../../../utils/password';
 import { ResponseFormatter } from '../../../utils/response-formatter';
-
+import { prisma } from "../../../utils/prisma"
 
 const passwordHasher = new PasswordHasher();
 const tokenService = new TokenService();
