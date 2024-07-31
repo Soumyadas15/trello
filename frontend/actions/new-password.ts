@@ -12,8 +12,6 @@ export const newPassword = async (
 
     if(!token) return { error: "Missing token!" }
 
-    console.log(token)
-
     const validatedFields = NewPasswordSchema.safeParse(values);
     if(!validatedFields.success) return { error: "Invalid fields!" }
 

@@ -31,7 +31,6 @@ export const createTask = async (values: z.infer<typeof TaskSchema>) => {
         }
 
         const data = validatedFields.data;
-        console.log(data)
 
         const apiUrl = `${process.env.API_URL}/task`
         const response = await axios.post(apiUrl, data, {

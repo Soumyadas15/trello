@@ -16,7 +16,7 @@ const swaggerOptions = {
         },
         servers: [
             {
-                url: `http://localhost:${PORT}/api`,
+                url: `https://trello-uf51.onrender.com/api`,
             },
         ],
     },

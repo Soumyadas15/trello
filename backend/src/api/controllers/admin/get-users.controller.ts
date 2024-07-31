@@ -21,8 +21,6 @@ export const getAllUsers = async (req: Request, res: Response) => {
     try {
         
         const userId = res.locals.userId;
-        console.log(userId)
-
         if (!userId) return ResponseFormatter.error(res, 404, 'User not found');
 
         const existingUser = await userService.getUserById(userId);

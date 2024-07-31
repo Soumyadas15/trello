@@ -15,8 +15,6 @@ export const login = async (values: z.infer<typeof LoginSchema>) => {
 
     const data = validatedFields.data;
     const cookieMaster = cookies();
-
-    console.log(data);
     
     const apiUrl = `${process.env.API_URL}/auth/login`;
     
